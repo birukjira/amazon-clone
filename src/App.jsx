@@ -1,15 +1,12 @@
 import "./App.css";
-import Carousels from "./components/Carousel/Carousel";
-import Header from "./components/Header/Header";
+import Landing from "./Pages/Landing/Landing";
 // import Swiper from "./components/Swiper/Swiper";
 
 function App() {
   return (
     <>
       <div>
-        <Header />
-        <Carousels />
-        {/* <Swiper /> */}
+        <Landing />
       </div>
     </>
   );
