@@ -1,10 +1,10 @@
 import React from "react";
-
+import LayOut from "../../components/LayOut/LayOut";
 function Signup() {
   return (
-    <div>
+    <LayOut>
       <h1>SignUp</h1>
-    </div>
+    </LayOut>
   );
 }
 

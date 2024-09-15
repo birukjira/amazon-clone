@@ -1,10 +1,10 @@
 import React from "react";
-
+import LayOut from "../../components/LayOut/LayOut";
 function Cart() {
   return (
-    <div>
+    <LayOut>
       <h1>Cart</h1>
-    </div>
+    </LayOut>
   );
 }
 

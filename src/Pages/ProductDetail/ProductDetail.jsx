@@ -1,10 +1,11 @@
 import React from "react";
+import LayOut from "../../components/LayOut/LayOut";
 
 function ProductDetail() {
   return (
-    <div>
+    <LayOut>
       <h1>Product Detail</h1>
-    </div>
+    </LayOut>
   );
 }
 

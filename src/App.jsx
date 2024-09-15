@@ -1,13 +1,10 @@
 import "./App.css";
-import Landing from "./Pages/Landing/Landing";
-// import Swiper from "./components/Swiper/Swiper";
+import Routing from "./Router.jsx";
 
 function App() {
   return (
     <>
-      <div>
-        <Landing />
-      </div>
+      <Routing />
     </>
   );
 }
