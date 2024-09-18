@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import logo from "../../assets/icons/amazon-logo-white.png";
 import { BsSearch } from "react-icons/bs";
@@ -6,10 +6,17 @@ import { SlLocationPin } from "react-icons/sl";
 import { BiCart } from "react-icons/bi";
 import classes from "./Header.module.css";
 import LowerHeader from "./LowerHeader";
+import { DataContext } from "../DataProvider/DataProvider";
 
 function Header() {
+  const [{ basket }, dispatch] = useContext(DataContext);
+  const totalItem = basket?.reduce((amount, item) => {
+    return item.amount + amount;
+  }, 0);
+
+  // console.log(basket.length);
   return (
-    <>
+    <section className={classes.header__outerContainer}>
       <header>
         <section className={classes.header__container}>
           <div className={classes.logo__container}>
@@ -67,13 +74,13 @@ function Header() {
             {/* cart */}
             <Link to="/cart" className={classes.cart}>
               <BiCart size={35} />
-              <span>0</span>
+              <span>{totalItem}</span>
             </Link>
           </div>
         </section>
       </header>
       <LowerHeader />
-    </>
+    </section>
   );
 }
 

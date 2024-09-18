@@ -36,11 +36,12 @@ function Results() {
         {isLoading ? (
           <Loader />
         ) : (
-          <dir className="results_container">
+          <dir className={classes.results__container}>
             {results?.map((data) => (
               <ProductCard
                 key={data.id}
                 product={data}
+                renderAdd={true}
                 // add_description={true}
                 add_button={true}
               />

@@ -11,7 +11,7 @@ function Loader() {
         height: "50vh",
       }}
     >
-      <FadeLoader color="#36d7b7" />
+      <FadeLoader color="#ff9900" />
     </div>
   );
 }

@@ -1,4 +1,4 @@
-.products__container {
+.results__container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   max-width: 1450px;
