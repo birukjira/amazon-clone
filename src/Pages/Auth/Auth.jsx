@@ -33,7 +33,7 @@ function Auth() {
           Interest-based ADS Notice.
         </p>
 
-        {/* Create account botton */}
+        {/* Create account bottom */}
         <button className={classes.auth__signUp_btn}>
           Create your Amazon Account
         </button>
