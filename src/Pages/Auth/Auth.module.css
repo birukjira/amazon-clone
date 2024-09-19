@@ -79,3 +79,8 @@
 .auth__signUp_btn:hover {
   background-color: #ccc;
 }
+
+.auth__error {
+  padding-top: 5px;
+  color: red;
+}
