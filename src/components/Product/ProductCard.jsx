@@ -7,7 +7,13 @@ import { Link } from "react-router-dom";
 import { DataContext } from "../DataProvider/DataProvider";
 import { Type } from "../../Utility/action.type";
 
-function ProductCard({ product, flex, add_description, renderAdd }) {
+function ProductCard({
+  product,
+  flex,
+  add_description,
+  renderAdd,
+  renderDesc,
+}) {
   // const { image, title, id, rating = {}, price } = product;
   // const { rate = 0, count = 0 } = rating;
   const { image, title, id, rating, price, description } = product;

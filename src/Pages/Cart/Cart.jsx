@@ -47,7 +47,7 @@ function Cart() {
                     key={item.id}
                     renderAdd={false}
                     product={item}
-                    renderDesc={true}
+                    add_description={true}
                     flex={true}
                   />
                   <div className={classes.cart__btn__container}>
